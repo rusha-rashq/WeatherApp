@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Yusei Magic', sans-serif;
+    background: rgb(13, 14, 13);
+    font-size: 120%;
+  }
+  
+  .card {
+    background: rgb(187, 219, 219);
+    color: rgb(59, 13, 5);
+    padding: 1.5em;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 1.5em;
+    border-radius: 50%;
+    border: 1px;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #ca18182b;
+    color: rgb(51, 9, 9);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+  }
+  
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1.5em;
+    border-radius: 12px;
+    background: #443d3d2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    color: rgb(34, 8, 8);
+    margin-bottom: 0.4em;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 9px;
+  }
+  
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading Weather...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
